@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>设置 - Smart Anti-Sedentary</title>
+  <link rel="stylesheet" href="settings-style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>⚙️ 设置</h2>
+      <button class="close-btn" onclick="window.close()">✕</button>
+    </div>
+
+    <div class="settings-content">
+      <div class="setting-item">
+        <label for="targetWorkTime">
+          <span class="label-text">目标工作时间</span>
+          <span class="label-hint">达到此时间后发送提醒</span>
+        </label>
+        <div class="input-group">
+          <input type="number" id="targetWorkTime" min="1" max="120" value="45">
+          <span class="unit">分钟</span>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <label for="resetThreshold">
+          <span class="label-text">离座重置阈值</span>
+          <span class="label-hint">闲置超过此时间则重置计时</span>
+        </label>
+        <div class="input-group">
+          <input type="number" id="resetThreshold" min="1" max="60" value="10">
+          <span class="unit">分钟</span>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <label for="remindPhase2Time">
+          <span class="label-text">强提醒时间</span>
+          <span class="label-hint">超过此时间发送强烈提醒</span>
+        </label>
+        <div class="input-group">
+          <input type="number" id="remindPhase2Time" min="1" max="120" value="50">
+          <span class="unit">分钟</span>
+        </div>
+      </div>
+
+      <div class="setting-item">
+        <label for="activeThreshold">
+          <span class="label-text">活跃判定阈值</span>
+          <span class="label-hint">闲置小于此时间视为活跃工作</span>
+        </label>
+        <div class="input-group">
+          <input type="number" id="activeThreshold" min="1" max="30" value="5">
+          <span class="unit">秒</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-reset" id="resetBtn">恢复默认</button>
+      <button class="btn btn-save" id="saveBtn">保存设置</button>
+    </div>
+
+    <div class="tips">
+      <p>💡 提示：修改设置后需要重启应用才能生效</p>
+    </div>
+  </div>
+
+  <script src="settings-renderer.js"></script>
+</body>
+</html>

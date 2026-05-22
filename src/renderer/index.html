@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Anti-Sedentary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>💻 专注计时器</h2>
+      <div class="header-actions">
+        <button class="settings-btn" id="settingsBtn" title="设置">⚙️</button>
+        <button class="close-btn" onclick="window.close()">✕</button>
+      </div>
+    </div>
+
+    <div class="timer-display">
+      <div class="time" id="time">00:00</div>
+      <div class="status" id="status">专注中...</div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+
+    <div class="info">
+      <div class="info-item">
+        <span class="label">目标时间:</span>
+        <span class="value" id="target">45分钟</span>
+      </div>
+      <div class="info-item">
+        <span class="label">离座重置:</span>
+        <span class="value">10分钟</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-reset" id="resetBtn">重置计时器</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
