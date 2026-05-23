@@ -1,0 +1,38 @@
+﻿2026-05-23T07:30:20.8331421Z ##[group]Run npm ci --ignore-scripts
+2026-05-23T07:30:20.8331744Z [36;1mnpm ci --ignore-scripts[0m
+2026-05-23T07:30:20.8331951Z [36;1mnpm run postinstall[0m
+2026-05-23T07:30:20.9615877Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-05-23T07:30:20.9616178Z ##[endgroup]
+2026-05-23T07:30:36.4876253Z npm warn EBADENGINE Unsupported engine {
+2026-05-23T07:30:36.4876911Z npm warn EBADENGINE   package: '@electron/rebuild@4.0.4',
+2026-05-23T07:30:36.4877438Z npm warn EBADENGINE   required: { node: '>=22.12.0' },
+2026-05-23T07:30:36.4877979Z npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-23T07:30:36.4878400Z npm warn EBADENGINE }
+2026-05-23T07:30:36.4899604Z npm warn EBADENGINE Unsupported engine {
+2026-05-23T07:30:36.4900108Z npm warn EBADENGINE   package: 'node-abi@4.31.0',
+2026-05-23T07:30:36.4900618Z npm warn EBADENGINE   required: { node: '>=22.12.0' },
+2026-05-23T07:30:36.4901141Z npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-23T07:30:48.3356424Z npm warn EBADENGINE }
+2026-05-23T07:30:48.3356743Z 
+2026-05-23T07:30:48.3356995Z added 300 packages, and audited 301 packages in 12s
+2026-05-23T07:30:48.3357247Z 
+2026-05-23T07:30:48.3357409Z 44 packages are looking for funding
+2026-05-23T07:30:48.3357737Z   run `npm fund` for details
+2026-05-23T07:30:48.3671976Z 
+2026-05-23T07:30:48.3672788Z 1 high severity vulnerability
+2026-05-23T07:30:48.3674976Z 
+2026-05-23T07:30:48.3675486Z To address all issues (including breaking changes), run:
+2026-05-23T07:30:48.3692022Z   npm audit fix --force
+2026-05-23T07:30:48.3693937Z 
+2026-05-23T07:30:48.3699431Z Run `npm audit` for details.
+2026-05-23T07:30:48.8098497Z 
+2026-05-23T07:30:48.8099095Z > smart-anti-sedentary@1.0.0 postinstall
+2026-05-23T07:30:48.8099603Z > electron-builder install-app-deps
+2026-05-23T07:30:48.8099803Z 
+2026-05-23T07:30:49.5821724Z   • electron-builder  version=26.8.1
+2026-05-23T07:30:49.5841810Z   • loaded configuration  file=package.json ("build" field)
+2026-05-23T07:30:49.8475090Z   • executing @electron/rebuild  electronVersion=28.3.3 arch=x64 buildFromSource=false workspaceRoot=D:\a\focus\focus projectDir=./ appDir=./
+2026-05-23T07:30:49.8476225Z   • installing native dependencies  arch=x64
+2026-05-23T07:30:50.0300692Z   • preparing       moduleName=desktop-idle arch=x64
+2026-05-23T07:31:27.9467920Z Terminate batch job (Y/N)? 
+2026-05-23T07:31:28.4421434Z ##[error]The operation was canceled.

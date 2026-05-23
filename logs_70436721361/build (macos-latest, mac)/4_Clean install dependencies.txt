@@ -1,0 +1,38 @@
+﻿2026-05-23T07:30:06.5966670Z ##[group]Run npm ci --ignore-scripts
+2026-05-23T07:30:06.5967210Z [36;1mnpm ci --ignore-scripts[0m
+2026-05-23T07:30:06.5967410Z [36;1mnpm run postinstall[0m
+2026-05-23T07:30:06.6010960Z shell: /bin/bash -e {0}
+2026-05-23T07:30:06.6011180Z ##[endgroup]
+2026-05-23T07:30:06.9064620Z npm warn EBADENGINE Unsupported engine {
+2026-05-23T07:30:06.9065260Z npm warn EBADENGINE   package: '@electron/rebuild@4.0.4',
+2026-05-23T07:30:06.9065700Z npm warn EBADENGINE   required: { node: '>=22.12.0' },
+2026-05-23T07:30:06.9066120Z npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-23T07:30:06.9066420Z npm warn EBADENGINE }
+2026-05-23T07:30:06.9070470Z npm warn EBADENGINE Unsupported engine {
+2026-05-23T07:30:06.9071000Z npm warn EBADENGINE   package: 'node-abi@4.31.0',
+2026-05-23T07:30:06.9071480Z npm warn EBADENGINE   required: { node: '>=22.12.0' },
+2026-05-23T07:30:06.9072030Z npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-23T07:30:06.9072380Z npm warn EBADENGINE }
+2026-05-23T07:30:11.6780770Z 
+2026-05-23T07:30:11.6882430Z added 316 packages, and audited 317 packages in 5s
+2026-05-23T07:30:11.6983700Z 
+2026-05-23T07:30:11.7060040Z 47 packages are looking for funding
+2026-05-23T07:30:11.7060490Z   run `npm fund` for details
+2026-05-23T07:30:11.7060740Z 
+2026-05-23T07:30:11.7061210Z 1 high severity vulnerability
+2026-05-23T07:30:11.7061470Z 
+2026-05-23T07:30:11.7061760Z To address all issues (including breaking changes), run:
+2026-05-23T07:30:11.7062210Z   npm audit fix --force
+2026-05-23T07:30:11.7062500Z 
+2026-05-23T07:30:11.7062780Z Run `npm audit` for details.
+2026-05-23T07:30:11.8432700Z 
+2026-05-23T07:30:11.8534100Z > smart-anti-sedentary@1.0.0 postinstall
+2026-05-23T07:30:11.8628700Z > electron-builder install-app-deps
+2026-05-23T07:30:11.8729470Z 
+2026-05-23T07:30:12.4437030Z   • electron-builder  version=26.8.1
+2026-05-23T07:30:12.4450130Z   • loaded configuration  file=package.json ("build" field)
+2026-05-23T07:30:12.5573570Z   • executing @electron/rebuild  electronVersion=28.3.3 arch=arm64 buildFromSource=false workspaceRoot=/Users/runner/work/focus/focus projectDir=./ appDir=./
+2026-05-23T07:30:12.5577160Z   • installing native dependencies  arch=arm64
+2026-05-23T07:30:12.6610410Z   • preparing       moduleName=desktop-idle arch=arm64
+2026-05-23T07:30:18.1055740Z   • finished        moduleName=desktop-idle arch=arm64
+2026-05-23T07:30:18.1139870Z   • completed installing native dependencies

@@ -6,12 +6,16 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
 
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: macos-latest
@@ -26,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Clean install dependencies
         run: |
@@ -35,7 +39,7 @@ jobs:
         timeout-minutes: 15
 
       - name: Build application
-        run: npm run build:${{ matrix.platform }} -- --publish never
+        run: npm run build:${{ matrix.platform }}
         timeout-minutes: 45
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false

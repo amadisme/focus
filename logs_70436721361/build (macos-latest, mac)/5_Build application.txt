@@ -1,0 +1,47 @@
+﻿2026-05-23T07:30:18.1295400Z ##[group]Run npm run build:mac -- --publish never
+2026-05-23T07:30:18.1295800Z [36;1mnpm run build:mac -- --publish never[0m
+2026-05-23T07:30:18.1329880Z shell: /bin/bash -e {0}
+2026-05-23T07:30:18.1330130Z env:
+2026-05-23T07:30:18.1330390Z   CSC_IDENTITY_AUTO_DISCOVERY: false
+2026-05-23T07:30:18.1330600Z   WIN_CSC_LINK: 
+2026-05-23T07:30:18.1330810Z ##[endgroup]
+2026-05-23T07:30:18.3105420Z 
+2026-05-23T07:30:18.3106070Z > smart-anti-sedentary@1.0.0 build:mac
+2026-05-23T07:30:18.3106730Z > electron-builder --mac --publish never --publish never
+2026-05-23T07:30:18.3111710Z 
+2026-05-23T07:30:18.6193510Z   • electron-builder  version=26.8.1 os=24.6.0
+2026-05-23T07:30:18.6218790Z   • loaded configuration  file=package.json ("build" field)
+2026-05-23T07:30:18.8910320Z   • executing @electron/rebuild  electronVersion=28.3.3 arch=x64 buildFromSource=false workspaceRoot=/Users/runner/work/focus/focus projectDir=./ appDir=./
+2026-05-23T07:30:18.8911120Z   • installing native dependencies  arch=x64
+2026-05-23T07:30:18.9793870Z   • preparing       moduleName=desktop-idle arch=x64
+2026-05-23T07:30:20.4183170Z   • finished        moduleName=desktop-idle arch=x64
+2026-05-23T07:30:20.4185130Z   • completed installing native dependencies
+2026-05-23T07:30:20.4202240Z   • packaging       platform=darwin arch=x64 electron=28.3.3 appOutDir=dist/mac
+2026-05-23T07:30:20.7541510Z   • downloading     url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-x64.zip size=100 MB parts=6
+2026-05-23T07:30:21.0903840Z   • downloaded      url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-x64.zip duration=617ms
+2026-05-23T07:30:22.3194460Z   • searching for node modules  pm=npm searchDir=/Users/runner/work/focus/focus
+2026-05-23T07:30:22.7800350Z   • default Electron icon is used  reason=application icon is not set
+2026-05-23T07:30:22.7898350Z   • skipped macOS application code signing  reason=, see https://electron.build/code-signing CSC_IDENTITY_AUTO_DISCOVERY=false
+2026-05-23T07:30:22.7903120Z   • building        target=macOS zip arch=x64 file=dist/智能防久坐-1.0.0-x64.zip
+2026-05-23T07:30:22.7905100Z   • building        target=DMG arch=x64 file=dist/智能防久坐-1.0.0-x64.dmg
+2026-05-23T07:30:22.7907860Z   • executing @electron/rebuild  electronVersion=28.3.3 arch=arm64 buildFromSource=false workspaceRoot=/Users/runner/work/focus/focus projectDir=./ appDir=./
+2026-05-23T07:30:22.7908750Z   • installing native dependencies  arch=arm64
+2026-05-23T07:30:22.8246390Z   • downloading     release=dmg-builder@1.2.0 file=dmgbuild-bundle-arm64-75c8a6c.tar.gz
+2026-05-23T07:30:22.9293040Z   • preparing       moduleName=desktop-idle arch=arm64
+2026-05-23T07:30:25.8215870Z   • finished        moduleName=desktop-idle arch=arm64
+2026-05-23T07:30:25.8254640Z   • completed installing native dependencies
+2026-05-23T07:30:25.8278860Z   • packaging       platform=darwin arch=arm64 electron=28.3.3 appOutDir=dist/mac-arm64
+2026-05-23T07:30:26.0738100Z   • downloading     url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-arm64.zip size=95 MB parts=6
+2026-05-23T07:30:26.3708450Z   • downloaded      url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-arm64.zip duration=542ms
+2026-05-23T07:30:27.8428620Z   • searching for node modules  pm=npm searchDir=/Users/runner/work/focus/focus
+2026-05-23T07:30:28.3183880Z   • falling back to ad-hoc signature for macOS application code signing
+2026-05-23T07:30:28.3285820Z   • signing         file=dist/mac-arm64/智能防久坐.app platform=darwin type=distribution identityName=- identityHash=none provisioningProfile=none
+2026-05-23T07:30:41.0128740Z   • skipped macOS notarization  reason=`notarize` options were unable to be generated
+2026-05-23T07:30:41.0230150Z   • building        target=macOS zip arch=arm64 file=dist/智能防久坐-1.0.0-arm64.zip
+2026-05-23T07:30:41.0331000Z   • building        target=DMG arch=arm64 file=dist/智能防久坐-1.0.0-arm64.dmg
+2026-05-23T07:30:45.0593480Z   • building block map  blockMapFile=dist/智能防久坐-1.0.0-x64.dmg.blockmap
+2026-05-23T07:30:55.0268800Z   • building block map  blockMapFile=dist/智能防久坐-1.0.0-arm64.dmg.blockmap
+2026-05-23T07:31:17.4576150Z   • building block map  blockMapFile=dist/智能防久坐-1.0.0-x64.zip.blockmap
+2026-05-23T07:31:23.1228390Z   • building block map  blockMapFile=dist/智能防久坐-1.0.0-arm64.zip.blockmap
+2026-05-23T07:31:23.6800290Z   ⨯ GitHub Personal Access Token is not set, neither programmatically, nor using env "GH_TOKEN"
+2026-05-23T07:31:23.6960380Z ##[error]Process completed with exit code 1.
